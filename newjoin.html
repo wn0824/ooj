@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="KO">
+    <head>
+        <link href="newjoin.css" rel="stylesheet" type="text/css"/> 
+        <meta charset="UTF-8">
+        <title>회원가입</title>
+
+        
+        <script src="signup.js">
+
+        </script>
+
+    </head>
+
+    <body>
+        <div id="head_css">
+            Sing Up
+        </div>
+        <form action="">
+            <table>
+                <tr>
+                    <th>UserName:</th>
+                    <td><input type="text" name="create_ID" style="width: 100px;" minlength="4" maxlength="12" autofocus>
+                        <input type="button" value="Double Check" onclick="overlap_check">
+                    </td>    
+                    
+                </tr>            
+                <tr>
+                    <th></th>
+                    <td>*Username should be 4 or more characters or less than 12 characters.</td>
+                </tr>    
+                <tr>
+                    <th>Password:</th>
+                    <td><input type="password" name="serverin_pwd" id="create_pwd" style="width: 100px;" minlength="6" maxlength="16">
+                    </td>
+                </tr>  
+                <tr>
+                    <th></th>
+                    <td>*Password should be 6 or more characters or less than 16 characters.</td>
+                </tr>  
+                <tr>
+                    <th>Password Check:</th>
+                    <td>
+                        <input type="password" id="check_pwd" style="width: 100px;" onkeyup="pwchek()" minlength="6" maxlength="16">
+                    </td>                    
+                </tr>
+                <tr>
+                    <th></th>
+                    <td style="height: 17px;"><div id="alert_success"></div></td> 
+                    </td>
+                </tr>
+                          
+                <tr>
+                    <th>Sex:</th>
+                    <td><input type="radio" name="sex">Man
+                        <input type="radio" name="sex">Woman</td>
+                </tr>
+            </table>
+           
+            
+            <br>
+            <p><center>
+            <input type="submit" value="Sing up"> &nbsp 
+            <input type="reset" value="Initialization"> &nbsp
+            <input type="button" value="Close" onclick="exit();">
+            </center></p>    
+        </form>
+
+    </body>
+</html>

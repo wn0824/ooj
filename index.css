@@ -1,0 +1,81 @@
+      .main_tatlebod{
+        margin: 100px;
+      }
+
+      .main_tatlebod p{
+        text-align: center;
+        font-size: 38px;
+        color: seashell;
+      }
+
+       #head_title{
+          height: 250px;
+          background-color: aquamarine;
+        }
+
+        #head_title h1{
+          text-align: center;
+        }
+       
+        #head_title table{
+          margin: auto;
+          width: 99%;
+        } 
+
+        #border_title{
+          background-color: blueviolet; 
+          display: grid;
+          grid-template-columns: 150px 1fr;
+        }
+
+        #border_list{
+          height: 800px;
+          float: left;
+          background-color:bisque;
+        }
+        #border_list ul{
+          list-style: none; padding: 15px;
+        }
+
+        #border_list ul li{
+          margin: auto;
+        }
+
+        #border_list ul li a{
+          font-size: 24px; color: red; font-weight: bold; text-decoration:none;
+        }
+        
+        #border_list p{
+          font-size: 36px;
+        }
+
+        #border_list form p{
+            font-size: 16px;
+        }
+
+        #login{
+            height: 100px;
+            background-color: chartreuse;
+
+        }
+
+        #login table{
+          width: auto;
+          box-sizing: border-box;
+        }
+
+
+        #border_view{
+          width: 83%;
+          height: 800px;
+          background-color: cornflowerblue;
+          float: right;
+          margin: 5px;
+          
+        }
+        table{
+          table-layout:fixed; word-break:break-all;
+        }
+
+       
+       
