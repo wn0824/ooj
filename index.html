@@ -2,10 +2,10 @@
 <html lang=ko>
  <head>
 
-  <link href="index.css" rel="stylesheet" type="text/css" />
+  <link href="./index.css" rel="stylesheet" type="text/css" />
    <meta charset="UTF-8">
 
-   <script src="index.js"></script>
+   <script src="./index.js"></script>
    
 
   <title>
@@ -41,16 +41,19 @@
           LIST
         </p>
         <ul>
-          <li><a href="">list1</a></li>
+          <li><a onclick="fetch('luckynumber').than(function(response){
+                              response.text().than(function(text){
+                              document.getElementId('article').innerHTML = text;
+                                })
+                          });">Lucky Number!</a>
           <li><a href="">list2</a></li>
           <li><a href="">list3</a></li>
           <li><a href="">list4</a></li>
         </ul>
     </div>
-    <div class="main_tatlebod">
-      <p>Hello, world!</p>
-
-    </div>
+    <article id="main_tatlebod">
+      <p style="text-align: center; font-size: 38px;  color: seashell;">Hello, world!</p>
+    </article>
 
     
 

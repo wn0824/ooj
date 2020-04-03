@@ -1,12 +1,8 @@
-      .main_tatlebod{
+      #main_tatlebod{
         margin: 100px;
       }
 
-      .main_tatlebod p{
-        text-align: center;
-        font-size: 38px;
-        color: seashell;
-      }
+
 
        #head_title{
           height: 250px;
