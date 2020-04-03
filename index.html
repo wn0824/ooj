@@ -43,7 +43,7 @@
         <ul>
           <li><a onclick="fetch('luckynumber').than(function(response){
                               response.text().than(function(text){
-                              document.getElementId('article').innerHTML = text;
+                              document.querySelector('article').innerHTML = text;
                                 })
                           });">Lucky Number!</a></li>
           <li><a href="">list2</a></li>
