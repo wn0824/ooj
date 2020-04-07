@@ -5,7 +5,18 @@
     <title>luckynumbers</title>
     <script>
     function makenumbers(){
-        alert("준비중")
+        var line = [];
+        var linemax = 0;
+        var nums = ""
+        while(line.length < 7){
+            nums = Math.floor(Math.random()*45)+1;
+            console.log(nums)
+            if(line.indexOf(nums) == -1){
+                line[linemax] = nums;
+                linemax++
+            }
+        }
+        document.getElementById("printnumbers").innerHTML=line[0]+', '+line[1]+', '+line[2]+', '+line[3]+', '+line[4]+', '+line[5]+'+ '+line[6]
       }
     </script>
 </head>
