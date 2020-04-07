@@ -2,21 +2,38 @@
 <html lang=ko>
  <head>
 
-  <link href="./index.css" rel="stylesheet" type="text/css" />
-   <meta charset="UTF-8">
-
-   <script src="./index.js"></script>
-   
+  <link href="./index.css?ver.1" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript"src="./index.js"></script>
 
   <title>
     mainpage
   </title>
 
+  <script>
+    $=jQuery;
+    function luckymenujs(url){
+      var ajaxoption = {
+        url : url,
+        async : true,
+        type : "post",
+        datatype : "HTML",
+        cache : false
+      };
+
+      $.ajax(ajaxoption).done(function(data){
+        $('#main_titlebod').children().remove();
+        $('#main_titlebod').html(data);
+      });
+    }
+    
+  </script>
  </head>
 
   <body>
   <div id="head_title">
-    <h1><a href="index.html">Top Title</a></h1>
+    <h1><a href="./index.html">Top Title</a></h1>
   </div>
 
   <div id="border_title">
@@ -40,22 +57,17 @@
         <p align="center">
           LIST
         </p>
-        <ul>
-          <li><a onclick="fetch('luckynumber').than(function(response){
-                              response.text().than(function(text){
-                              document.querySelector('article').innerHTML = text;
-                                })
-                          });">Lucky Number!</a></li>
-          <li><a href="">list2</a></li>
-          <li><a href="">list3</a></li>
-          <li><a href="">list4</a></li>
-        </ul>
-    </div>
-    <article id="main_tatlebod">
-      <p style="text-align: center; font-size: 38px;  color: seashell;">Hello, world!</p>
-    </article>
+          <span id="luckymenu" onclick="luckymenujs('./lucky.html')">list1</span><br/>
+          <span>list2</span><br/>
+          <span>list3</span><br/>
+          <span>list4</span><br/>
+      </div>
+ 
+      <div id="main_titlebod">
+      
+        <p>Hello, world!</p>
 
-    
+      </div> 
 
   </div>
   </body>
