@@ -2,10 +2,10 @@
 <html lang=ko>
  <head>
 
-  <link href="./index.css?ver.1" rel="stylesheet" type="text/css" />
+  <link href="./index.css?ver.1.1" rel="stylesheet" type="text/css" />
   <meta charset="UTF-8">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript"src="./index.js"></script>
+  <script type="text/javascript"src="./index.js?ver.1></script>"></script>
 
   <title>
     mainpage
@@ -19,7 +19,7 @@
         async : true,
         type : "post",
         datatype : "HTML",
-        cache : true
+        cache : false
       };
 
       $.ajax(ajaxoption).done(function(data){
@@ -58,8 +58,8 @@
         <p align="center">
           LIST
         </p>
-          <span id="luckymenu" onclick="manuchange('./lucky.html')">list1</span><br/>
-          <span id="gugudan" onclick="manuchange('/gugudan.html')">list2</span><br/>
+          <span id="luckymenu" onclick="manuchange('./lucky.html')">TodayNumber</span><br/>
+          <span id="gugudan" onclick="manuchange('/gugudan.html')">GuGuDan</span><br/>
           <span>list3</span><br/>
           <span>list4</span><br/>
       </div>
