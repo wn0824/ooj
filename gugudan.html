@@ -1,0 +1,43 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gugudan</title>
+    
+</head>
+<body>
+    <button onclick="makenumbers()">번호생성</button>
+    <input type="text" id="printnumbers" />
+    <br>
+    <select id="gugudan">
+        <option value="0">choice</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select> 
+    <button onclick="Create()">Let's GUGUDAN</button>
+    <br>
+    <textarea id="gugubox" style='width: 450px; height: 20px;' disabled></textarea>
+    <br>
+    <script>
+    function Create(){
+        var number = document.getElementById("gugudan").value;
+        var guguarray=[];
+        if(number == 0){
+            alert("chioce the number please!")
+        }else{
+            for(var i=1; i<=9;i++){
+            var numtext = number+"*"+i+"="+(number*i);
+            guguarray.push(numtext);
+            document.getElementById('gugubox').value = guguarray
+            }                    
+        }
+    }
+    </script>
+</body>
+</html>

@@ -13,13 +13,13 @@
 
   <script>
     $=jQuery;
-    function luckymenujs(url){
+    function manuchange(url){
       var ajaxoption = {
         url : url,
         async : true,
         type : "post",
         datatype : "HTML",
-        cache : false
+        cache : true
       };
 
       $.ajax(ajaxoption).done(function(data){
@@ -27,6 +27,7 @@
         $('#main_titlebod').html(data);
       });
     }
+
     
   </script>
  </head>
@@ -57,8 +58,8 @@
         <p align="center">
           LIST
         </p>
-          <span id="luckymenu" onclick="luckymenujs('./lucky.html')">list1</span><br/>
-          <span>list2</span><br/>
+          <span id="luckymenu" onclick="manuchange('./lucky.html')">list1</span><br/>
+          <span id="gugudan" onclick="manuchange('/gugudan.html')">list2</span><br/>
           <span>list3</span><br/>
           <span>list4</span><br/>
       </div>
